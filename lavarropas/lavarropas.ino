@@ -189,11 +189,6 @@ void XML_response(EthernetClient cl)
     cl.print("OFF");
   }
   cl.print("</button2>");
-  // read analog pin A2
-  analog_val = analogRead(2);
-  cl.print("<analog1>");
-  cl.print(analog_val);
-  cl.print("</analog1>");
   cl.print("</inputs>");
 }
 
